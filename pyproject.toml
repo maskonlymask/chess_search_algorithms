@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "chess-search-algorithms"
+version = "0.1.0"
+description = ""
+authors = ["Newonlynew <rooooopertio@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.ruff]
+select = ["E", "F", "B", "I", "ISC", "Q", "LOG", "N", "C", "T20", "COM"]
+ignore = ["B904"]
+line-length = 80
+
+[tool.mypy]
+disable_error_code = ["assignment"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
